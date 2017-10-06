@@ -1,9 +1,9 @@
 # utl_fix_excel_column_names_before_import
-Use SQL query with SAS passthru to Excel. Use SQL Query to rename columns before importing into SAS. Excel SQL dialect.
+Use Microsoft SQL query with SAS passthru to Excel. Use SQL Query to rename columns before importing into SAS. Excel SQL dialect.
 
     ```  SAS-Forum: Programatic renaming of bad column names on the excel side using passthru  ```
     ```    ```
-    ```    I fix the names on the excel side, using passthru and the SQL excel  ```
+    ```    I fix the names on the excel side, using passthru and the MS SQL excel  ```
     ```    dialect. The excel SQL dialect is close to MS Access SQL dialect. I have not found  ```
     ```    good documentaion of the excel SQL dialect. (see access doc at end of post.  ```
     ```    ```
@@ -36,7 +36,7 @@ Use SQL query with SAS passthru to Excel. Use SQL Query to rename columns before
     ```              F4     Height  ```
     ```              F5     Weight  ```
     ```    ```
-    ```             * create rename like statemnts  ```
+    ```             * create rename statemnts  ```
     ```             select  ```
     ```                catx(" ",_name_,"as",compress(col1,".:$-@+%^*()+%^&*()"))  ```
     ```             into:  ```
